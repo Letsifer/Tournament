@@ -114,13 +114,19 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Round.cpp" />
     <ClCompile Include="Team.cpp" />
+    <ClCompile Include="TeamsReader.cpp" />
     <ClCompile Include="Tournament.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Round.h" />
     <ClInclude Include="Team.h" />
+    <ClInclude Include="TeamsReader.h" />
     <ClInclude Include="Tournament.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Tournament.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

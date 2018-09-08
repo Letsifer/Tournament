@@ -1,17 +1,13 @@
 #include <iostream>
 #include<vector>
-#include "Team.h"
+#include "TeamsReader.h"
 #include "Tournament.h"
 using namespace std;
 
 int main() {
-	vector<Team> teams;
-	int index = 1;
-	teams.push_back(Team(index++, "Zenit"));
-	teams.push_back(Team(index++, "CSKA"));
-	teams.push_back(Team(index++, "Dinamo"));
-	teams.push_back(Team(index++, "Spartak"));
-	Tournament tournament(teams);
+	setlocale(LC_ALL, "Russian");
+	TeamsReader reader;
+	Tournament tournament(reader.getTeamsFromSource());
 	string calendar = tournament.showCalendar();
 	cout << calendar;
 	system("pause");

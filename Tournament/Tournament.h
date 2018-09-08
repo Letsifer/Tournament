@@ -43,8 +43,8 @@ class Tournament
 		for (int i = 0, currentIndex = lastTeamIndex - 1; i < roundsNumber; i++) {
 			for (int j = 1; j < gamesInRound; j++) {
 				calendar[i][j].second = currentIndex;
-			}
-			currentIndex = currentIndex == 0 ? lastTeamIndex - 1 : currentIndex - 1;
+				currentIndex = currentIndex == 0 ? lastTeamIndex - 1 : currentIndex - 1;
+			}			
 		}
 		for (int i = 0; i < roundsNumber; i++) {
 			Round currentRound(i + 1, teams.size());
